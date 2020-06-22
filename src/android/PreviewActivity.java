@@ -41,7 +41,7 @@ import pub.devrel.easypermissions.EasyPermissions;
  * Created by dmcBig on 2017/6/9.
  */
 
-public class PickerActivity extends Activity implements DataCallback, View.OnClickListener {
+public class PickerActivity1 extends Activity implements DataCallback, View.OnClickListener {
 
     Intent argsIntent;
     RecyclerView recyclerView;
