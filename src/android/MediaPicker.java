@@ -11,7 +11,7 @@ import android.provider.MediaStore;
 import android.util.Base64;
 import android.util.Log;
 
-import com.dmcbig.mediapicker.PickerActivity1;
+import com.dmcbig.mediapicker.PickerActivity;
 import com.dmcbig.mediapicker.PickerConfig;
 import com.dmcbig.mediapicker.TakePhotoActivity;
 import com.dmcbig.mediapicker.entity.Media;
@@ -81,7 +81,7 @@ public class MediaPicker extends CordovaPlugin {
 
     private void getMedias(JSONArray args, CallbackContext callbackContext) {
         this.callback=callbackContext;
-        Intent intent =new Intent(cordova.getActivity(), PickerActivity1.class);
+        Intent intent =new Intent(cordova.getActivity(), PickerActivity.class);
         intent.putExtra(PickerConfig.MAX_SELECT_COUNT,10);  //default 40 (Optional)
         JSONObject jsonObject=new JSONObject();
         if (args != null && args.length() > 0) {
